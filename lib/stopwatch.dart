@@ -32,6 +32,7 @@ class _stopwatchState extends State<stopwatch> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.yellow.shade100,
       appBar: AppBar(
         automaticallyImplyLeading: false,
         title: Text('Stopwatch',style: TextStyle(
@@ -48,6 +49,7 @@ class _stopwatchState extends State<stopwatch> {
   Widget _buildBody() {
     return Column(
       children: <Widget>[
+        SizedBox(height: 300),
         Expanded(
           child: FittedBox(
             fit: BoxFit.none,
@@ -81,7 +83,7 @@ class _stopwatchState extends State<stopwatch> {
                 child: Text('Reset',style: TextStyle(
                     fontSize: 40, color: Colors.blue),
                 )),
-              SizedBox(height: 300),
+              SizedBox(height: 100),
               navbar(),
             ],
           ),

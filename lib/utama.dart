@@ -15,27 +15,34 @@ class _utamaState extends State<utama> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        backgroundColor: Colors.yellow.shade100,
       appBar: AppBar(
       automaticallyImplyLeading: false,
       title: Text('Home Screen',style: TextStyle(
           color: Colors.blue,fontWeight: FontWeight.bold
       ),),
-      backgroundColor: Colors.transparent,
+      backgroundColor: Colors.yellow,
       elevation: 0,
       centerTitle: true,
     ),
-        body: Column(
+        body: ListView(
+          children: [ Column(
+
           mainAxisAlignment:  MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
+            SizedBox(height: 200),
             _anggota(context),
             _hobi(context),
             _stopwatchyuk(context),
+            SizedBox(height: 100),
             navbar(),
           ],
+          ),
+          ],
         )
-      )
-    );
+        )
+      );
   }
 }
 

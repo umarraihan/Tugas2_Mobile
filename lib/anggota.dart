@@ -13,6 +13,7 @@ class _anggotaState extends State<anggota> {
   Widget build(BuildContext context) {
     return SafeArea(
         child: Scaffold(
+          backgroundColor: Colors.yellow.shade100,
           appBar: AppBar(
             automaticallyImplyLeading: false,
             title: Text('Anggota Kelompok',style: TextStyle(
@@ -22,11 +23,12 @@ class _anggotaState extends State<anggota> {
             elevation: 0,
             centerTitle: true,
           ),
-          body: Center(
-            child :Column(
+          body: ListView(
+            children :[Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
+                  SizedBox(height: 200),
                   // padding: const EdgeInsets.only(top: 50.0),
                   Text(
                       "Anggota Kelompok",
@@ -47,9 +49,11 @@ class _anggotaState extends State<anggota> {
                         fontWeight: FontWeight.w300
                     ),
                   ),
+                  SizedBox(height: 200),
                   navbar(),
                 ]
             ),
+          ]
           ),
 
         )

@@ -14,6 +14,7 @@ class _hobiState extends State<hobi> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.lightBlueAccent.shade100,
       appBar: AppBar(
         automaticallyImplyLeading: false,
         title: Text('Hobi',style: TextStyle(
@@ -30,6 +31,7 @@ class _hobiState extends State<hobi> {
             child: Container(
               padding: const EdgeInsets.fromLTRB(50, 15, 50, 15),
               child: Card(
+                color: Colors.yellow.shade100,
                 shape: RoundedRectangleBorder(
                   side: BorderSide(
                     color: Colors.yellow,

@@ -38,6 +38,9 @@ class _loginState extends State<login> {
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.center,
       children:[
+        Text("Aplikasi Stopwatch Yuhuu",style: TextStyle(fontWeight: FontWeight.bold, fontFamily:'Calibri' ,color:Colors.yellow,
+          fontSize: 30,),),
+      SizedBox(height: 20,),
       _usernamebox(), _passwordbox(), _loginButton(context)
     ],
       ),

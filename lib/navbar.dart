@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tugas2_mobile/login.dart';
+import 'package:tugas2_mobile/pertanyaan.dart';
 import 'package:tugas2_mobile/stopwatch.dart';
 import 'package:tugas2_mobile/utama.dart';
 import 'package:bottom_nav_bar/bottom_nav_bar.dart';
@@ -20,12 +21,13 @@ class _navbarState extends State<navbar> {
       width: 800,
       height: 300,
       child: Scaffold(
+        backgroundColor: Colors.yellow.shade100,
           resizeToAvoidBottomInset: false,
           body: ListView(
           ),
           bottomNavigationBar: BottomNavBar(
             showElevation: false,
-            backgroundColor: Colors.transparent,
+            backgroundColor: Colors.yellow.shade100,
             selectedIndex: _currentIndex,
             onItemSelected: (index) {
               setState(() => _currentIndex = index
@@ -41,7 +43,7 @@ class _navbarState extends State<navbar> {
                 case 1:
                   Navigator.push(context, MaterialPageRoute(builder: (context)
                   {
-                    return stopwatch();
+                    return pertanyaan();
                   }
                   ));
                   break;
